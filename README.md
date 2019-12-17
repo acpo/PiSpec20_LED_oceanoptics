@@ -12,7 +12,6 @@ spectrometer features.  This code takes care of collecting the spectra, everythi
 I wrote this on a Raspberry Pi 3b+. For Windows or Mac you will need to make small changes to the code to deal with OS peculiarities. You will need to possess an Ocean Optics spectrometer.  The LED requires building a small circuit to allow pulse width modulation of the LED for brightness control.  The schematic is below.  I built this on a Pi-topPROTO board which made it even easier.  
 ![schematic of PWM circuit for Raspberry Pi](https://github.com/acpo/PiSpec20_LED_stellarnet/blob/master/LEDCIRCUIT.png)
 ### Libraries  
-- SeaBreeze  (https://sourceforge.net/projects/seabreeze/  depending on OS, you may need to build from source)  
 - Python-Seabreeze  (https://github.com/ap--/python-seabreeze  or the Conda forge)  
 - numpy  
 - python-matplotlib  
@@ -20,6 +19,7 @@ I wrote this on a Raspberry Pi 3b+. For Windows or Mac you will need to make sma
 - python-virtualenv  
 - Tkinter
 - pigpio  
+- *rarely needed* SeaBreeze  (https://sourceforge.net/projects/seabreeze/  depending on OS, you may need to build from source)  
 ### Files to install
 - only one python file to get ¯\\_(ツ)_/¯ 
 ### Other Hardware  
