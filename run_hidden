@@ -1,4 +1,4 @@
 #!/bin/bash
 cd ~/PiSpec20_LED_oceanoptics-master/PiSpec20_LED_oceanoptics/
-screen -dm python3 OO_spec.py
+screen -dm python3 OO_LED_spec.py
 exit
