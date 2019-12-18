@@ -21,7 +21,8 @@ I wrote this on a Raspberry Pi 3b+. For Windows or Mac you will need to make sma
 - pigpio  
 - *rarely needed* SeaBreeze  (https://sourceforge.net/projects/seabreeze/  depending on OS, you may need to build from source)  
 ### Files to install
-- only one python file to get ¯\\_(ツ)_/¯ 
+- only one python file to get ¯\\_(ツ)_/¯  
+- on Raspberry Pi remember to start the PWM daemon `sudo pigpiod`  
 ### Other Hardware  
 - a USB connected Ocean Optics spectrometer  
 - a PWM circuit and LED.  The easiest way to do this would be on a Raspberry Pi since it has PWM pins ready to use.  Other prototyping platfoms (Arduino, etc.) could be adapted easily.  From a 'standard' PC, a PWM circuit can be attached by USB (Yocto, etc.).  An acceptable LED for "white light" illumination can cost as little as $2.00.  
