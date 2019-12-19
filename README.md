@@ -33,6 +33,7 @@ I wrote this on a Raspberry Pi 3b+. For Windows or Mac you will need to make sma
 | Ocean Insight | HR 4000       |     yes       |  
 | Ocean Insight | HR 2000 plus  |     yes       |  
 | Ocean Insight | USB 2000      |     yes       | 
+| Ocean Insight | USB 4000      | firmware issue? |
 
 ### Should work with SeaBreeze (Ocean Insight products)  
 | Spectrometer | cseabreeze | pyseabreeze|  
