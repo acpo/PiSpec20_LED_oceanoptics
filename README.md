@@ -7,7 +7,8 @@ to make an effectively disposable computer.  I picked Python 3.x (the older bran
 ## Project Audience  
 The project was written to support undergraduate laboratories, so really this repository is for people looking for a frontend 
 to run their spectrometer.  However, the functionality of the project can readily be expanded to take advantage of the 
-spectrometer features.  This code takes care of collecting the spectra, everything else is just manipulations in code.  Simple changes in the code shift the interface from having lots of things chosen for you to needing to make lots of choices.
+spectrometer features.  This code takes care of collecting the spectra, everything else is just manipulations in code.  Simple changes in the code shift the interface from having lots of things chosen for you to needing to make lots of choices.  
+There is a `def` in the code for saving spectra.  To make it accessible, you would just need to uncomment three lines in the GUI section to make a 'Save' Button visible.  
 ## PiSpec20 Requirements  
 I wrote this on a Raspberry Pi 3b+.  The current version was updated on Python 3.9 and 3.11.  Raspbian OS *Bullseye* was used for testing.  The newer (in 2024) *Bookworm* OS also works but is slow on a 3b+.  
 For Windows or Mac you will need to make small changes to the code to deal with OS peculiarities. You will need to possess an Ocean Optics spectrometer.  The LED requires building a small circuit to allow pulse width modulation of the LED for brightness control.  The schematic is below.  I built this on a Pi-topPROTO board which made it even easier.  
@@ -18,8 +19,9 @@ See the documentation at the [python-seabreeze documents](https://python-seabree
 ### Libraries  
 - Python-Seabreeze  (https://github.com/ap--/python-seabreeze  or the Conda forge)  
 - numpy  
-- python-matplotlib  
-- python-flask  
+- matplotlib
+- (*May 2024*) may need to also get `sudo apt-get install python3-pil.imagetk` to address an import error from matplotlib  
+- python-Flask  
 - python-virtualenv  
 - Tkinter
 - pigpio  
