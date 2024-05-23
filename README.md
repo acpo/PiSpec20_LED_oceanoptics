@@ -21,14 +21,14 @@ See the documentation at the [python-seabreeze documents](https://python-seabree
 - numpy  
 - matplotlib
 - (*May 2024*) may need to also get `sudo apt-get install python3-pil.imagetk` to address an import error from matplotlib  
-- python-Flask  
-- python-virtualenv  
-- Tkinter
-- pigpio  
-- *rarely needed* SeaBreeze  (https://sourceforge.net/projects/seabreeze/  depending on OS, you may need to build from source)  
+- pigpio  {already part of Raspbian} (for Raspberry Pi control of the LED)
+- *rarely needed* SeaBreeze  (https://sourceforge.net/projects/seabreeze/  depending on OS, you may need to build from source)
+  - python-virtualenv (part of a typical Python installation)
+  - Tkinter
 ### Files to install
 - only one python file to get ¯\\_(ツ)_/¯  
-- on Raspberry Pi remember to start the PWM daemon `sudo pigpiod`  
+- on Raspberry Pi remember to start the PWM daemon `sudo pigpiod`.  Or permanently enable it with `sudo systemctl enable pigpiod`
+- `sudo chmod +x run_hidden` to make the bash script executable. A batch file would substitute the bash script on Windows.
 ### Other Hardware  
 - a USB connected Ocean Optics spectrometer  
 - a PWM circuit and LED.  The easiest way to do this would be on a Raspberry Pi since it has PWM pins ready to use.  Other prototyping platfoms (Arduino, etc.) could be adapted easily.  From a 'standard' PC, a PWM circuit can be attached by USB (Yocto, etc.).  An acceptable LED for "white light" illumination can cost as little as $2.00.  
