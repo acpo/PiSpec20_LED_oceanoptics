@@ -17,14 +17,13 @@ For Windows or Mac you will need to make small changes to the code to deal with 
 [Visual C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/) is required before installing Python-Seabreeze    
 See the documentation at the [python-seabreeze documents](https://python-seabreeze.readthedocs.io/en/latest/install.html#operating-system-dependent-setup)*  
 ### Libraries  
-- Python-Seabreeze  (https://github.com/ap--/python-seabreeze  or the Conda forge)  
-- numpy  
-- matplotlib
+- `pip3 install seabreeze`  (https://github.com/ap--/python-seabreeze  or the Conda forge)
+- run the seabreeze setup script `seabreeze_os_setup` to add the udev rules
+- `pip3 install numpy`
+- `pip3 install matplotlib`
 - (*May 2024*) may need to also get `sudo apt-get install python3-pil.imagetk` to address an import error from matplotlib  
 - pigpio  {already part of Raspbian} (for Raspberry Pi control of the LED)
-- *rarely needed* SeaBreeze  (https://sourceforge.net/projects/seabreeze/  depending on OS, you may need to build from source)
-  - python-virtualenv (part of a typical Python installation)
-  - Tkinter
+
 ### Files to install
 - only one python file to get ¯\\_(ツ)_/¯  
 - on Raspberry Pi remember to start the PWM daemon `sudo pigpiod`.  Or permanently enable it with `sudo systemctl enable pigpiod`
